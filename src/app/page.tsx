@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Background Image */}
       <div className="absolute inset-0 w-full h-full hero-zoom">
         <div
-          className="w-full h-full bg-cover bg-center md:bg-top bg-no-repeat bg-[url('/home-main-mobile.jpg')] md:bg-[url('/home-main.jpg?v=2')]"
+          className="w-full h-full bg-cover bg-[center_30%] md:bg-top bg-no-repeat bg-[url('/home-main-mobile.jpg')] md:bg-[url('/home-main.jpg?v=2')] scale-[1.15] origin-[50%_30%] md:scale-100 md:origin-center"
         />
       </div>
 
