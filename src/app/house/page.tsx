@@ -13,10 +13,11 @@ export default function House() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full px-margin-mobile md:px-margin-desktop pb-16 max-w-container-max mx-auto md:left-1/2 md:-translate-x-1/2">
           <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-4">
-            The Yangpyeong Residence
+            목행동 주택
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-            A seamless blend of raw architectural timber and refined, modern minimalism, designed to embrace the natural topography of Gyeonggi-do.
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            아버지와 제가 직접 지은 복층형 목조 주택입니다.<br />
+            튼튼한 목조 구조와 정성스러운 마감으로, 실용적이면서 오래 머물 수 있는 공간을 만들었습니다.
           </p>
         </div>
       </header>
@@ -29,10 +30,7 @@ export default function House() {
             {/* Philosophy Text */}
             <section className="prose max-w-none">
               <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                Rooted in the philosophy of "Modern Organicism," this residence acts as a sophisticated frame for the surrounding landscape. The design leverages the structural integrity of eco-friendly North American timber, offering a tactile experience that evokes the raw scent of cedar and the refined feel of sanded oak.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mt-6">
-                Every spatial transition is curated to maximize natural light through its southern orientation, while maintaining an energy efficiency rating of Grade 1. The interior spaces are expansive yet grounded, functioning similarly to a premium gallery space where life itself becomes the focal art piece.
+                아버지와 제가 직접 지은 복층형 목조 주택입니다. 튼튼한 목조 구조와 정성스러운 마감으로, 실용적이면서 오래 머물 수 있는 공간을 만들었습니다.
               </p>
             </section>
             {/* Gallery Grid */}
@@ -68,20 +66,29 @@ export default function House() {
               <ul className="space-y-6">
                 <li className="flex items-start">
                   <span className="material-symbols-outlined text-secondary mr-4 mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
-                    straighten
+                    landscape
                   </span>
                   <div>
-                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Size</span>
-                    <span className="font-body-lg text-body-lg text-on-surface font-medium">45평 (150sqm)</span>
+                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">대지 면적</span>
+                    <span className="font-body-lg text-body-lg text-on-surface font-medium">40평</span>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="material-symbols-outlined text-secondary mr-4 mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
-                    pin_drop
+                    straighten
                   </span>
                   <div>
-                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Location</span>
-                    <span className="font-body-lg text-body-lg text-on-surface font-medium">경기도 양평군 (Yangpyeong, Gyeonggi-do)</span>
+                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">건물 면적</span>
+                    <span className="font-body-lg text-body-lg text-on-surface font-medium">27평</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="material-symbols-outlined text-secondary mr-4 mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
+                    layers
+                  </span>
+                  <div>
+                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">구조</span>
+                    <span className="font-body-lg text-body-lg text-on-surface font-medium">복층형 (방 2개, 거실, 화장실 2개)</span>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -89,10 +96,17 @@ export default function House() {
                     forest
                   </span>
                   <div>
-                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Features</span>
-                    <span className="font-body-lg text-body-lg text-on-surface font-medium leading-snug">
-                      친환경 북미산 목재<br />에너지 효율 등급 1등급<br />남향 배치
-                    </span>
+                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">공법</span>
+                    <span className="font-body-lg text-body-lg text-on-surface font-medium">목조주택</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="material-symbols-outlined text-secondary mr-4 mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
+                    pin_drop
+                  </span>
+                  <div>
+                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">위치</span>
+                    <span className="font-body-lg text-body-lg text-on-surface font-medium">충청북도 충주시 목행동</span>
                   </div>
                 </li>
                 <li className="flex items-start pt-4 border-t border-outline-variant/30">
@@ -100,7 +114,7 @@ export default function House() {
                     sell
                   </span>
                   <div>
-                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Price</span>
+                    <span className="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">가격</span>
                     <span className="font-headline-lg-mobile text-headline-lg-mobile text-primary">상담 문의</span>
                   </div>
                 </li>
