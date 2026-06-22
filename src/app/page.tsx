@@ -4,9 +4,13 @@ export default function Home() {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Hero Background Image */}
-      <div className="absolute inset-0 w-full h-full hero-zoom bg-[#121212] md:bg-transparent">
+      <div className="absolute inset-0 w-full h-full hero-zoom bg-[#121212] md:bg-transparent overflow-hidden">
+        {/* Ambient Blurred Background for Mobile to seamlessly fill edges */}
+        <div 
+          className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center opacity-80 blur-3xl scale-125 bg-[url('/home-main-mobile.jpg')]"
+        />
         <div
-          className="w-full h-full bg-contain md:bg-cover bg-center md:bg-top bg-no-repeat bg-[url('/home-main-mobile.jpg')] md:bg-[url('/home-main.jpg?v=2')]"
+          className="relative w-full h-full bg-contain md:bg-cover bg-center md:bg-top bg-no-repeat bg-[url('/home-main-mobile.jpg')] md:bg-[url('/home-main.jpg?v=2')]"
         />
       </div>
 
