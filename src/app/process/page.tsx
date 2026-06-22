@@ -49,10 +49,10 @@ export default function Process() {
             <div className="pl-12 md:pl-0 md:pr-element-gap flex flex-col justify-center md:order-1 order-2">
               <div className="flex items-center gap-3 mb-4">
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container text-primary font-label-md text-label-md">02</span>
-                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">골조 및 목조 시공</h2>
+                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">뼈대 세우기</h2>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                집의 뼈대를 세우는 과정입니다. 좋은 목재를 하나하나 직접 짜 맞추며, 튼튼하면서도 따뜻한 구조를 만들었습니다.
+                다져진 땅 위에 집의 뼈대를 세웠어요. 휑하던 자리에 집의 모양이 조금씩 잡혀갑니다. 튼튼하면서도 따뜻하게 지낼 수 있는 집을 만들려고 노력했어요.
               </p>
             </div>
             {/* Image Card */}
