@@ -8,8 +8,7 @@ export default function Home() {
         <div
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZ6ppgwbzj_hNayvUK7a4_sQpYNufMTrLmpj9w0KgHJxb7dOmESoD4lJAoMLP09ekKRU-I1I1g_oBvdokLQgXKbuRdVBXLfnSWbOojUNv5bV0DJC156RBGFeMYzprOqSepVjTJxo_v36B1hGsKkn8KJLT8zeEgtdJIrWfmMlAJjLhDZ3Y4ledoPtdP473sDhb_zkk_lMN2v3esALqSLQ3I8ro7NfPTmhxjDezqhDP-J9arQoNrOEfzFFFg6pqFN-1nG5OD3QRxlC1O')",
+            backgroundImage: "url('/home-main.jpg?v=2')",
           }}
         />
       </div>

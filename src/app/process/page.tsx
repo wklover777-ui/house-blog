@@ -24,7 +24,7 @@ export default function Process() {
                 <img
                   alt="Site Selection and Foundation Phase"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAurs6ntUzlHK7OWKPGigKC9JwZc2P1clLRlTH7aS-Voz2EnVWdGb4UFmQrDPxr1W3dSd768T-0aTGBVWY0ZdYSOaut7yasbpQfgE9twWvdVltHUR1G9YbmrQIyG4_yvos1PIG5W9D-9CCILDnYutJNGbP1AQ_0LLDZgX_xlhRdOWzrwWgK_JW0pU3nfWlowUTuX7oME8xcbOSrE7OB73tSSYvaizuRiQEDFnDKSACrUb6ayG13uc0CtgupJr8DcCzUPpdSgNVrSf4F"
+                  src="/process-01-foundation.jpg"
                 />
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Process() {
                 <img
                   alt="Framing and Wood Construction Phase"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJBHN7JM4vVGM3WjD23xwGHVnphJ86crHB90KGGgDkdPOI2-3Loz8TWMzv40uSEU48s_0ZkEhRHW3_A2RJrnEqJXEj9BmjlIYJq1XeIH7LzMETxrNdREuhjTatrcdq8wSc8AqbJd6yTvvjjxb8WEdPG1aiEX5Urm96-ObBJBFdEpQaRxPV2BsZk4CUksqBAud4T9bhnWZEGPdL58oAJHQA0HEV1Yt5ckjbdv5GKrVNvSYFF8VGsfrQ-tnkwfxPbBVMkjW1gHNY2V8C"
+                  src="/process-02-framing.jpg"
                 />
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Process() {
                 <img
                   alt="Interior and Exterior Finishing Phase"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi0Wz9qj9wQLOzaaLFEFM305jR4jCiIk0pvddwxG8ZoN1sdcjmPoyyy7FmCHdGhoEAaORP97mZ1qWXbwJ7dGWmHfdSdcER-OR0-Lg4vdcWICspeBzKpFgm-nADQ2v0wNg8gz5EiXJtva3acOHuu8XzmJZjvssy93dFNa_ibRv5JeWVPTOyL-MGh6pwd4n-hW2MEfd41PexgW0AgyzoE108e3ZX0JBfH8qiipHsdiaZW57EYqT2uaHyoedof8tUX0uA24UXeJVS5yVO"
+                  src="/process-03-finishing.jpg"
                 />
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Process() {
                 <img
                   alt="Final Completion Phase"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlFQZg2UYSf-4hn2Ps4cGhA_U8Jx8aAinpjpCnE-fPFvGbyrl60MIpBKzExPxKti1ybCLD_ER4UwlDWLawEkFH4txH3eVSsFMoGzrjw9RsARv3C0xr8OfBg9NBSDcuH7epSDgBuGiGayDkzbwLaaOlCLDxFxr2cwNeVs-CQAE_o6fA2mcf8EMpemcZDeBxe0tEZk4MVg_57oRH-49wgwOeiYpngJWiONXZNjtAa4KP54MyYaskHr0aKAASXGIoeAXYgR4dW9Xf8MQN"
+                  src="/home-main.jpg?v=2"
                 />
               </div>
             </div>
