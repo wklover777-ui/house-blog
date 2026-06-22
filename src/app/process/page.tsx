@@ -6,7 +6,7 @@ export default function Process() {
       {/* Hero Section */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap text-center md:text-left">
         <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6 text-balance">
-          집을 짓는 과정
+          빈 땅에서 집이 되기까지
         </h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-balance">
           땅을 고르는 것부터 집이 완성되기까지, 아버지와 제가 직접 거쳐온 과정을 기록합니다.
