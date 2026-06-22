@@ -1,6 +1,9 @@
+"use client";
+import { useState } from 'react';
 import Link from 'next/link';
 
 export default function House() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   return (
     <>
       {/* Hero Section */}
@@ -37,25 +40,54 @@ export default function House() {
             </section>
             {/* Gallery Grid */}
             <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-              <div className="group overflow-hidden rounded-lg bg-surface-container aspect-square md:aspect-auto md:h-96">
+              <div 
+                className="md:col-span-2 group overflow-hidden rounded-lg bg-surface-container aspect-[4/3] md:aspect-video cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => setSelectedImage('/house-interior-01.jpg')}
+              >
                 <img
-                  alt=""
+                  alt="복층 통창과 계단"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyTzoMor_k8jW1FWpHfj5GIDhqeqTF-QYMZnM-XzsA92e_P3Stg23GPmbgykC4ZQLBpa-N5USaLodl6bJhiW5CJQGBNYuLwxuo2mwbKhF4slbFbaYddjP44W9o4HFos4MZdjlzrNKGT8p6O5kNS-WGlRFF38GfWoWywz6owpcUZoi2B-lBnGrJRaVHr3RgC7hDQugoucfvVGXMe5rROHoqPeaSnSJyDTWuTeJbL2S4Sz8PjFgghf5F9ZvHmwCTa-4HzyIiHr13zL_m"
+                  src="/house-interior-01.jpg"
                 />
               </div>
-              <div className="group overflow-hidden rounded-lg bg-surface-container aspect-square md:aspect-auto md:h-96">
+              <div 
+                className="group overflow-hidden rounded-lg bg-surface-container aspect-square cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => setSelectedImage('/house-interior-04.jpg')}
+              >
                 <img
-                  alt=""
+                  alt="주방, 거실, 복층 전체"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoUjAlIZhs3tmxvY1koTsf2LWKbATTKlgN5-rULK5a8ectxuDnacjdyDeGwsLXFb75q8CwasNp05pBGUE52HxMnzmVG1HwHcJV2ayvikhkY4weaK3DpDK5eSvkb4WIiBdKADGbb0vD1H2f_rwvUg5hABqYTG7i1oFNAJPh1vUNQvZcKoilsVVAtBLGbDDztVC1AaNVAV2un2ZBh5BiM2Rovr3V8VUOI_k3HU6jhC5o3Ao7buvPgQxAs6e6ergJ377muEWIvUyyAN1L"
+                  src="/house-interior-04.jpg"
                 />
               </div>
-              <div className="md:col-span-2 group overflow-hidden rounded-lg bg-surface-container aspect-video md:h-[500px]">
+              <div 
+                className="group overflow-hidden rounded-lg bg-surface-container aspect-square cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => setSelectedImage('/house-interior-02.jpg')}
+              >
                 <img
-                  alt=""
+                  alt="빈 방"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUez_U_OwdfdlWNwi3TyZ_pgmBhHZBdPE-Ogk9oLtf1cSNuWOPTDaCSzPrZlNj8Ot_Gk-AF78kfE8kehtT1DRF1_WSKppySy99yHpBP9XtEyIkKAxJDbgSZMgr15nKRwJVueVpYp4HKXV6tMC8stoS2DB93grBMtUj6jE_V4vbBuOTHm8CnobJdGSd3MKRRZspuzY5paVj7fFQOu5PxRk4ApJhnERkjh0uNcHycFKjh50r2-ynJu7TpbBMi3xvMUgcVu9qIznflJI3"
+                  src="/house-interior-02.jpg"
+                />
+              </div>
+              <div 
+                className="group overflow-hidden rounded-lg bg-surface-container aspect-square cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => setSelectedImage('/house-interior-03.jpg')}
+              >
+                <img
+                  alt="욕실"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="/house-interior-03.jpg"
+                />
+              </div>
+              <div 
+                className="group overflow-hidden rounded-lg bg-surface-container aspect-square cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => setSelectedImage('/house-interior-05.jpg')}
+              >
+                <img
+                  alt="높은 층고 방과 현관"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="/house-interior-05.jpg"
                 />
               </div>
             </section>
@@ -128,6 +160,31 @@ export default function House() {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 cursor-zoom-out animate-fade-in"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-6 right-6 text-white/70 hover:text-white bg-black/50 hover:bg-black/80 rounded-full p-2 transition-all z-50 flex items-center justify-center"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
+            aria-label="Close lightbox"
+          >
+            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>close</span>
+          </button>
+          <img 
+            src={selectedImage} 
+            className="max-w-full max-h-full object-contain rounded shadow-2xl animate-scale-in" 
+            alt="확대된 이미지" 
+            onClick={(e) => e.stopPropagation()} // Prevent clicking image from closing
+          />
+        </div>
+      )}
     </>
   );
 }
