@@ -138,21 +138,26 @@ export default function Contact() {
 
         {/* Contact Details & Map */}
         <div className="md:col-span-5 space-y-element-gap">
-          <div className="bg-secondary-container/30 p-8 rounded-xl h-full">
+          <div className="bg-secondary-container/30 p-8 rounded-xl h-full flex flex-col">
             <h3 className="font-headline-md text-headline-md text-primary mb-6">연락처</h3>
-            <div className="space-y-4 font-body-md text-body-md text-on-surface-variant">
-              <div className="flex items-start gap-4">
-                <span className="material-symbols-outlined text-primary mt-1">location_on</span>
-                <div>
-                  <p className="font-bold text-on-surface">M LINE Studio</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 mt-6">
+            <div className="space-y-4 font-body-md text-body-md text-on-surface-variant mb-8">
+              <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-primary">mail</span>
                 <a href="mailto:wklover777@gmail.com" className="hover:text-primary transition-colors">
                   wklover777@gmail.com
                 </a>
               </div>
+            </div>
+            {/* Google Maps Embed */}
+            <div className="w-full h-[300px] rounded-lg overflow-hidden shadow-sm border border-outline-variant/30">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1126.360666540726!2d127.91827067181687!3d37.01387417533588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1782107514941!5m2!1sko!2skr"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
