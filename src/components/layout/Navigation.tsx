@@ -47,16 +47,6 @@ export default function Navigation() {
           })}
         </div>
 
-        {/* Trailing CTA */}
-        <div className="hidden md:block">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 bg-primary text-on-primary font-label-md text-label-md tracking-widest uppercase rounded hover:bg-tertiary transition-colors duration-300"
-          >
-            Inquire
-          </Link>
-        </div>
-
         {/* Mobile Menu Toggle */}
         <button 
           className="md:hidden text-primary p-2 transition-transform hover:scale-105 active:scale-95" 
@@ -90,13 +80,6 @@ export default function Navigation() {
               </Link>
             );
           })}
-          <Link
-            href="/contact"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="font-label-md text-label-md tracking-widest uppercase p-5 text-center text-on-primary bg-primary hover:bg-primary/90 transition-colors"
-          >
-            Inquire
-          </Link>
         </div>
       )}
     </nav>
