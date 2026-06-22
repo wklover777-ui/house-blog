@@ -21,8 +21,8 @@ export default function House() {
             목행동 주택
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-            아버지와 제가 직접 지은 복층형 목조 주택입니다.<br />
-            튼튼한 목조 구조와 정성스러운 마감으로, 실용적이면서 오래 머물 수 있는 공간을 만들었습니다.
+            복층 구조의 단독 목조 주택입니다.<br />
+            알찬 공간 구성과 풍부한 채광으로, 일상이 편안한 집입니다.
           </p>
         </div>
       </header>
