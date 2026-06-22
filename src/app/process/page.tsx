@@ -1,13 +1,15 @@
+import Link from 'next/link';
+
 export default function Process() {
   return (
     <div className="flex-grow pt-32 md:pt-48 pb-section-gap">
       {/* Hero Section */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap text-center md:text-left">
         <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6 text-balance">
-          The Architecture of Craft
+          집을 짓는 과정
         </h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-balance">
-          Our construction methodology bridges the gap between raw, natural materials and refined architectural elegance. Explore the meticulous four-stage journey from bare earth to a completed, bespoke sanctuary.
+          땅을 고르는 것부터 집이 완성되기까지, 아버지와 제가 직접 거쳐온 과정을 기록합니다.
         </p>
       </section>
 
@@ -34,9 +36,8 @@ export default function Process() {
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container text-primary font-label-md text-label-md">01</span>
                 <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">대지 선정 및 기초</h2>
               </div>
-              <h3 className="font-body-lg text-body-lg text-outline mb-4">Site Selection &amp; Foundation</h3>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                A meticulous survey of the terrain ensures optimal orientation and structural integrity. Ground preparation involves precise excavation and laying a robust foundation, setting the unshakeable bedrock for the timber structure. We respect the natural topography, allowing the architecture to emerge organically from the site.
+                가장 먼저 땅을 살피고 다졌습니다. 단단한 기초가 있어야 오래가는 집이 되기에, 터를 파고 바닥을 다지는 일부터 정성을 들였습니다.
               </p>
             </div>
           </article>
@@ -50,9 +51,8 @@ export default function Process() {
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container text-primary font-label-md text-label-md">02</span>
                 <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">골조 및 목조 시공</h2>
               </div>
-              <h3 className="font-body-lg text-body-lg text-outline mb-4">Framing &amp; Wood Construction</h3>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                The soul of the building takes shape. Premium, sustainably sourced timber is expertly jointed and erected. This phase highlights bespoke craftsmanship, where every structural beam and column is meticulously placed to form a resilient and aesthetically breathtaking skeleton, celebrating the raw, tactile nature of wood.
+                집의 뼈대를 세우는 과정입니다. 좋은 목재를 하나하나 직접 짜 맞추며, 튼튼하면서도 따뜻한 구조를 만들었습니다.
               </p>
             </div>
             {/* Image Card */}
@@ -86,9 +86,8 @@ export default function Process() {
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">03</span>
                 <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">내외장 마감</h2>
               </div>
-              <h3 className="font-body-lg text-body-lg text-outline mb-4">Interior &amp; Exterior Finishing</h3>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                The transition from structure to sanctuary. High-end finishes, custom millwork, and advanced fenestration are seamlessly integrated. The marriage of tactile wood surfaces with modern glass and minimal metal elements creates a harmonious balance of light, warmth, and structural clarity.
+                뼈대 위에 벽과 마감을 입혔습니다. 손이 많이 가는 작업이지만, 마감의 디테일이 집의 완성도를 좌우하기에 꼼꼼히 신경 썼습니다.
               </p>
             </div>
           </article>
@@ -102,9 +101,8 @@ export default function Process() {
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">04</span>
                 <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">준공 및 완성</h2>
               </div>
-              <h3 className="font-body-lg text-body-lg text-outline mb-4">Completion</h3>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                The final culmination of design and engineering. Rigorous quality checks and precision detailing finalize the architectural vision. The completed structure stands as a testament to modern organicism, ready to gracefully age and deepen in character within its natural surroundings.
+                드디어 집이 완성되었습니다. 빈 땅에서 시작해 사람이 머물 수 있는 공간이 되기까지, 모든 과정에 정성을 담았습니다.
               </p>
             </div>
             {/* Image Card */}
@@ -123,16 +121,13 @@ export default function Process() {
 
       {/* Call to Action Section */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-section-gap text-center">
-        <div className="bg-secondary-container/30 rounded-xl p-12 md:p-24 border border-outline-variant/30 ambient-shadow backdrop-blur-sm">
-          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6 text-balance">
-            Begin Your Architectural Journey
+        <div className="bg-secondary-container/30 rounded-xl p-12 md:p-24 border border-outline-variant/30 ambient-shadow backdrop-blur-sm flex flex-col items-center">
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-8 text-balance">
+            이 집이 궁금하시다면, 편하게 문의해주세요.
           </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8 text-balance">
-            Partner with us to translate your vision into a structural masterpiece crafted from nature's finest materials.
-          </p>
-          <button className="bg-primary text-on-primary font-label-md text-label-md tracking-widest uppercase px-10 py-4 rounded-DEFAULT hover:opacity-90 hover:-translate-y-1 transition-all duration-300 ambient-shadow">
-            Start a Conversation
-          </button>
+          <Link href="/contact" className="inline-block bg-primary text-on-primary font-label-md text-label-md tracking-widest uppercase px-10 py-4 rounded-DEFAULT hover:opacity-90 hover:-translate-y-1 transition-all duration-300 ambient-shadow">
+            문의하기
+          </Link>
         </div>
       </section>
     </div>
