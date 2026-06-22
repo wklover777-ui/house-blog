@@ -1,10 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -56,10 +58,47 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="md:hidden text-primary p-2" aria-label="Toggle Menu">
-          <span className="material-symbols-outlined">menu</span>
+        <button 
+          className="md:hidden text-primary p-2 transition-transform hover:scale-105 active:scale-95" 
+          aria-label="Toggle Menu"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <span className="material-symbols-outlined">
+            {isMobileMenuOpen ? 'close' : 'menu'}
+          </span>
         </button>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-surface/95 backdrop-blur-md shadow-md border-t border-outline-variant/30 flex flex-col animate-fade-in z-40">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-label-md text-label-md tracking-widest uppercase p-5 border-b border-outline-variant/20 transition-colors
+                  ${
+                    isActive
+                      ? 'text-primary bg-primary/5 font-bold'
+                      : 'text-on-surface hover:text-primary hover:bg-secondary-container/10'
+                  }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
+          <Link
+            href="/contact"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="font-label-md text-label-md tracking-widest uppercase p-5 text-center text-on-primary bg-primary hover:bg-primary/90 transition-colors"
+          >
+            Inquire
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }
