@@ -64,7 +64,7 @@ export default function House() {
           {/* Right Column: Key Information Sidebar */}
           <div className="lg:col-span-4 order-1 lg:order-2 mb-12 lg:mb-0">
             <aside className="sticky top-32 bg-surface-container rounded-xl p-8 shadow-sm border border-outline-variant/30">
-              <h3 className="font-headline-md text-headline-md text-primary mb-8 border-b border-outline-variant/30 pb-4">Project Details</h3>
+              <h3 className="font-headline-md text-headline-md text-primary mb-8 border-b border-outline-variant/30 pb-4">집 정보</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
                   <span className="material-symbols-outlined text-secondary mr-4 mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
