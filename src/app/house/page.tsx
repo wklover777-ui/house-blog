@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function House() {
   return (
     <>
@@ -119,9 +121,9 @@ export default function House() {
                   </div>
                 </li>
               </ul>
-              <button className="w-full mt-10 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest py-4 px-8 rounded-full hover:bg-tertiary transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5">
-                Inquire about this house
-              </button>
+              <Link href="/contact" className="block text-center w-full mt-10 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest py-4 px-8 rounded-full hover:bg-tertiary transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                이 집 문의하기
+              </Link>
             </aside>
           </div>
         </div>

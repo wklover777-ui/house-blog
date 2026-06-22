@@ -1,4 +1,36 @@
+"use client";
+
+import { useState, FormEvent } from 'react';
+
 export default function Contact() {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('submitting');
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xgojewgr', {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        setStatus('success');
+        form.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
+
   return (
     <div className="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div className="mb-element-gap text-center md:text-left">
@@ -13,8 +45,17 @@ export default function Contact() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
         {/* Contact Form */}
         <div className="md:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-[0_4px_24px_rgba(93,64,55,0.08)]">
-          {/* Supabase Action Structure: Action will be connected later */}
-          <form className="space-y-6">
+          {status === 'success' && (
+            <div className="mb-6 p-4 bg-green-50 text-green-800 border border-green-200 rounded-md">
+              문의가 접수되었습니다. 곧 연락드리겠습니다.
+            </div>
+          )}
+          {status === 'error' && (
+            <div className="mb-6 p-4 bg-red-50 text-red-800 border border-red-200 rounded-md">
+              오류가 발생했습니다. 잠시 후 다시 시도해 주세요.
+            </div>
+          )}
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block font-label-md text-label-md text-on-surface-variant mb-2 uppercase tracking-widest">
@@ -85,10 +126,11 @@ export default function Contact() {
 
             <div className="pt-4">
               <button
-                type="button"
-                className="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full w-full hover:bg-primary/90 hover:scale-[1.02] transition-all duration-300 shadow-md"
+                type="submit"
+                disabled={status === 'submitting'}
+                className="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full w-full hover:bg-primary/90 hover:scale-[1.02] transition-all duration-300 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status === 'submitting' ? '전송 중...' : 'Send Message'}
               </button>
             </div>
           </form>
