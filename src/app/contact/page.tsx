@@ -149,8 +149,8 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-4 mt-6">
                 <span className="material-symbols-outlined text-primary">mail</span>
-                <a href="mailto:hello@m-line.com" className="hover:text-primary transition-colors">
-                  hello@m-line.com
+                <a href="mailto:wklover777@gmail.com" className="hover:text-primary transition-colors">
+                  wklover777@gmail.com
                 </a>
               </div>
             </div>
