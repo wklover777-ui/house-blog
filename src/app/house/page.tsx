@@ -35,7 +35,7 @@ export default function House() {
             {/* Philosophy Text */}
             <section className="prose max-w-none">
               <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                아버지와 제가 직접 지은 복층형 목조 주택입니다. 튼튼한 목조 구조와 정성스러운 마감으로, 실용적이면서 오래 머물 수 있는 공간을 만들었습니다.
+                복층 구조로 공간을 넉넉하게 나눴고, 큰 창으로 햇빛이 잘 들어옵니다. 목조 주택 특유의 따뜻함과 단단함을 함께 느낄 수 있는 집입니다.
               </p>
             </section>
             {/* Gallery Grid */}
