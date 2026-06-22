@@ -22,8 +22,9 @@ export default function Home() {
           <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6 drop-shadow-lg">
             나무로 짓는 꿈,<br />시간이 머무는 집
           </h1>
-          <p className="font-body-lg text-body-lg text-on-primary/90 mb-element-gap max-w-xl hidden md:block drop-shadow-md">
-            자연의 숨결을 그대로 담은 공간. 당신의 일상이 예술이 되는 하이엔드 목조 건축을 경험해보세요.
+          <p className="font-body-lg text-body-lg text-on-primary/90 mb-element-gap max-w-xl hidden md:block drop-shadow-md leading-relaxed">
+            아버지와 제가 직접 지은 집입니다.<br />
+            좋은 자재와 정직한 손길로, 오래 머물 수 있는 공간을 만들었습니다.
           </p>
 
           {/* CTA Buttons */}
