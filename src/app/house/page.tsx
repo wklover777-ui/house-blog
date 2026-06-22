@@ -52,12 +52,12 @@ export default function House() {
               </div>
               <div 
                 className="group overflow-hidden rounded-lg bg-surface-container aspect-square cursor-pointer shadow-sm hover:shadow-md transition-shadow"
-                onClick={() => setSelectedImage('/house-interior-04.jpg')}
+                onClick={() => setSelectedImage('/house-interior-04.jpg?v=2')}
               >
                 <img
                   alt="주방, 거실, 복층 전체"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="/house-interior-04.jpg"
+                  src="/house-interior-04.jpg?v=2"
                 />
               </div>
               <div 
