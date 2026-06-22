@@ -9,10 +9,9 @@ export default function House() {
       {/* Hero Section */}
       <header className="relative w-full h-[614px] md:h-[819px]">
         <div
-          className="absolute inset-0 w-full h-full bg-cover"
+          className="absolute inset-0 w-full h-full bg-cover bg-[75%_60%] md:bg-[center_60%]"
           style={{
             backgroundImage: "url('/house-hero.jpg')",
-            backgroundPosition: "center 60%", // Adjusted to show deck and windows
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>

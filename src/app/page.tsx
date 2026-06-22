@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Background Image */}
       <div className="absolute inset-0 w-full h-full hero-zoom">
         <div
-          className="w-full h-full bg-cover bg-top bg-no-repeat"
+          className="w-full h-full bg-cover bg-[75%_top] md:bg-top bg-no-repeat"
           style={{
             backgroundImage: "url('/home-main.jpg?v=2')",
           }}
