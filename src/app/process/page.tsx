@@ -84,10 +84,10 @@ export default function Process() {
             <div className="pl-12 md:pl-element-gap flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-4">
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">03</span>
-                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">내외장 마감</h2>
+                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">벽과 마감 입히기</h2>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                뼈대 위에 벽과 마감을 입혔습니다. 손이 많이 가는 작업이지만, 마감의 디테일이 집의 완성도를 좌우하기에 꼼꼼히 신경 썼습니다.
+                이제 벽을 올리고 마감을 입혔어요. 마감 하나하나가 집의 분위기를 결정하니까, 안과 밖을 꼼꼼하게 다듬었습니다.
               </p>
             </div>
           </article>
