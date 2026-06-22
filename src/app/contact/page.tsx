@@ -35,10 +35,10 @@ export default function Contact() {
     <div className="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div className="mb-element-gap text-center md:text-left">
         <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">
-          Contact Us
+          문의하기
         </h1>
         <p className="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-surface-tint">
-          당신의 꿈을 함께 설계합니다.
+          집에 대한 궁금한 점, 무엇이든 편하게 물어보세요.
         </p>
       </div>
 
@@ -59,7 +59,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block font-label-md text-label-md text-on-surface-variant mb-2 uppercase tracking-widest">
-                  Name
+                  이름
                 </label>
                 <input
                   type="text"
@@ -71,7 +71,7 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="phone" className="block font-label-md text-label-md text-on-surface-variant mb-2 uppercase tracking-widest">
-                  Phone
+                  연락처
                 </label>
                 <input
                   type="tel"
@@ -85,7 +85,7 @@ export default function Contact() {
 
             <div>
               <label htmlFor="email" className="block font-label-md text-label-md text-on-surface-variant mb-2 uppercase tracking-widest">
-                Email
+                이메일
               </label>
               <input
                 type="email"
@@ -98,22 +98,22 @@ export default function Contact() {
 
             <div>
               <label htmlFor="inquiry-type" className="block font-label-md text-label-md text-on-surface-variant mb-2 uppercase tracking-widest">
-                Inquiry Type
+                문의 유형
               </label>
               <select
                 id="inquiry-type"
                 name="inquiry-type"
                 className="w-full bg-surface-container-lowest border-0 border-b border-primary/30 focus:border-primary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface transition-colors"
               >
-                <option value="building">Building</option>
-                <option value="purchasing">Purchasing</option>
-                <option value="consulting">Consulting</option>
+                <option value="building">시공 문의</option>
+                <option value="purchasing">분양 문의</option>
+                <option value="consulting">기타 상담</option>
               </select>
             </div>
 
             <div>
               <label htmlFor="message" className="block font-label-md text-label-md text-on-surface-variant mb-2 uppercase tracking-widest">
-                Message
+                문의 내용
               </label>
               <textarea
                 id="message"
@@ -130,7 +130,7 @@ export default function Contact() {
                 disabled={status === 'submitting'}
                 className="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full w-full hover:bg-primary/90 hover:scale-[1.02] transition-all duration-300 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === 'submitting' ? '전송 중...' : 'Send Message'}
+                {status === 'submitting' ? '전송 중...' : '문의 보내기'}
               </button>
             </div>
           </form>
@@ -138,37 +138,22 @@ export default function Contact() {
 
         {/* Contact Details & Map */}
         <div className="md:col-span-5 space-y-element-gap">
-          <div className="bg-secondary-container/30 p-8 rounded-xl">
-            <h3 className="font-headline-md text-headline-md text-primary mb-6">Studio Details</h3>
+          <div className="bg-secondary-container/30 p-8 rounded-xl h-full">
+            <h3 className="font-headline-md text-headline-md text-primary mb-6">연락처</h3>
             <div className="space-y-4 font-body-md text-body-md text-on-surface-variant">
               <div className="flex items-start gap-4">
                 <span className="material-symbols-outlined text-primary mt-1">location_on</span>
                 <div>
                   <p className="font-bold text-on-surface">M LINE Studio</p>
-                  <p>123 Timbercraft Way</p>
-                  <p>Design District, City 10001</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <span className="material-symbols-outlined text-primary">call</span>
-                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  +1 (234) 567-890
-                </a>
-              </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mt-6">
                 <span className="material-symbols-outlined text-primary">mail</span>
                 <a href="mailto:hello@m-line.com" className="hover:text-primary transition-colors">
                   hello@m-line.com
                 </a>
               </div>
             </div>
-          </div>
-          <div className="h-64 rounded-xl overflow-hidden shadow-sm border border-outline-variant/30">
-            <img
-              className="w-full h-full object-cover"
-              alt="Map"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCstTPzOjeDI-RMunR8uP8-79cJf5QLpVlg1L5_h581nx-UMvmAFkyWHf3fcUvq_XIasqp3jmFvqC0_rheLws7yYzXBe-K7gyVJWoy5WeAiu--HFTNogUbV9vHk5_rhGQK5sWbvYHKQg9b8nvuLC5JrN4C2qzwHdJYMON840L7cBCCr1iGhP8uzWtTTRbJdyFNoawQOgf_ZCE1SXXBi1B_dozU6m7o5MkzvbPH9aVnYzK4ECSXnjHWpaJS9G7ZBkPWK4-75BoWLI1v7"
-            />
           </div>
         </div>
       </div>
