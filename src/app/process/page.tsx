@@ -112,7 +112,7 @@ export default function Process() {
               <div className="overflow-hidden rounded-lg ambient-shadow bg-surface-container aspect-[4/3] relative">
                 <img
                   alt="Final Completion Phase"
-                  className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
                   src="/home-main.jpg?v=2"
                 />
               </div>
