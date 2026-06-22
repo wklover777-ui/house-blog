@@ -6,10 +6,10 @@ export default function House() {
       {/* Hero Section */}
       <header className="relative w-full h-[614px] md:h-[819px]">
         <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          className="absolute inset-0 w-full h-full bg-cover"
           style={{
-            backgroundImage:
-              "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOVkgzE15ndM9tN9i1KzDn4Uw_WKNX8ZC0hT7xvflM04Q9CJaXJDJsjLXdPgeIyycMILMzA-ePTnR54GK-x3wPjFAVQeiOdW7eaKzP4sIb7JWLpsdTI4IGBIH_S_4uPuuMe8POSAH0E8A0ou4u-Oh0BS_U3wgqEv8k3LWtG1MBnv-018xHMqrkLXqM6NUlJOzTjvNanWcbX8_XPeJV3fB-ajmX5_BFLnHsyiY2Bez8_ROPowvWc4Efj8JBooSpwMKHNGij4ps3wfQ2')",
+            backgroundImage: "url('/house-hero.jpg')",
+            backgroundPosition: "center 60%", // Adjusted to show deck and windows
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
