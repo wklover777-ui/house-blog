@@ -99,10 +99,10 @@ export default function Process() {
             <div className="pl-12 md:pl-0 md:pr-element-gap flex flex-col justify-center md:order-1 order-2">
               <div className="flex items-center gap-3 mb-4">
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">04</span>
-                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">준공 및 완성</h2>
+                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">완성된 집</h2>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                드디어 집이 완성되었습니다. 빈 땅에서 시작해 사람이 머물 수 있는 공간이 되기까지, 모든 과정에 정성을 담았습니다.
+                드디어 집이 완성됐어요. 오래된 건물이 있던 자리가, 사람이 머물 수 있는 공간으로 다시 태어났습니다.
               </p>
             </div>
             {/* Image Card */}
