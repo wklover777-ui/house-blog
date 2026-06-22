@@ -10,8 +10,8 @@ export default function Footer() {
             M LINE
             <span className="block font-body-md text-sm mt-1">M실내건축</span>
           </span>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-xs">
-            Pioneering modern organicism through bespoke timber architecture and meticulous craftsmanship.
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
+            직접 짓고, 정직하게 짓습니다.<br/>목조 주택 시공 · M실내건축
           </p>
         </div>
 
