@@ -34,10 +34,10 @@ export default function Process() {
             <div className="pl-12 md:pl-element-gap flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-4">
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container text-primary font-label-md text-label-md">01</span>
-                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">대지 선정 및 기초</h2>
+                <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">땅 고르기와 기초 다지기</h2>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant text-balance">
-                가장 먼저 땅을 살피고 다졌습니다. 단단한 기초가 있어야 오래가는 집이 되기에, 터를 파고 바닥을 다지는 일부터 정성을 들였습니다.
+                처음 이 자리엔 오래된 건물이 있었어요. 그걸 모두 헐어내고, 빈 땅을 다지는 일부터 시작했습니다. 기초가 튼튼해야 오래가는 집이 되니까, 바닥 다지는 일에 특히 신경 썼습니다.
               </p>
             </div>
           </article>
