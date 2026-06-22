@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "LUMBER & LINE | 나무로 짓는 꿈, 시간이 머무는 집",
-  description: "나무로 짓는 꿈, 시간이 머무는 집. Lumber & Line Architectural Studio",
+  title: "M LINE | 나무로 짓는 꿈, 시간이 머무는 집",
+  description: "나무로 짓는 꿈, 시간이 머무는 집. M LINE",
 };
 
 export default function RootLayout({

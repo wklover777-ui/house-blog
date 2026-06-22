@@ -102,7 +102,7 @@ export default function Contact() {
               <div className="flex items-start gap-4">
                 <span className="material-symbols-outlined text-primary mt-1">location_on</span>
                 <div>
-                  <p className="font-bold text-on-surface">Lumber &amp; Line Studio</p>
+                  <p className="font-bold text-on-surface">M LINE Studio</p>
                   <p>123 Timbercraft Way</p>
                   <p>Design District, City 10001</p>
                 </div>
@@ -115,8 +115,8 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-primary">mail</span>
-                <a href="mailto:hello@lumberandline.com" className="hover:text-primary transition-colors">
-                  hello@lumberandline.com
+                <a href="mailto:hello@m-line.com" className="hover:text-primary transition-colors">
+                  hello@m-line.com
                 </a>
               </div>
             </div>

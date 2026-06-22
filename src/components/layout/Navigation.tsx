@@ -21,7 +21,7 @@ export default function Navigation() {
           href="/"
           className="font-display-lg-mobile md:font-display-lg text-headline-md md:text-headline-lg tracking-tighter text-primary dark:text-primary-fixed"
         >
-          LUMBER &amp; LINE
+          M LINE
         </Link>
 
         {/* Desktop Nav Links */}

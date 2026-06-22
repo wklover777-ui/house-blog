@@ -7,7 +7,8 @@ export default function Footer() {
         {/* Brand */}
         <div className="flex flex-col gap-4">
           <span className="font-display-lg text-headline-sm text-primary">
-            LUMBER &amp; LINE
+            M LINE
+            <span className="block font-body-md text-sm mt-1">M실내건축</span>
           </span>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-xs">
             Pioneering modern organicism through bespoke timber architecture and meticulous craftsmanship.
@@ -35,7 +36,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="flex flex-col justify-end md:items-end">
           <p className="font-body-md text-body-md text-on-surface-variant text-sm md:text-right text-balance">
-            © 2024 Lumber &amp; Line Architectural Studio.<br className="hidden md:block" /> All rights reserved.
+            © 2026 M LINE.<br className="hidden md:block" /> All rights reserved.
           </p>
         </div>
       </div>
