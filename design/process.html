@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Construction Process - Lumber &amp; Line</title>
+<script type="text/javascript" nonce="XOJ0BVE+zr3qdJZKBBAaLFbFzesxhK/xP1QmLnOdycs=" src="//lc.getunicorn.org?type=base-script&amp;request-id=2163"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#504441",
+                        "surface-tint": "#77574d",
+                        "secondary-fixed-dim": "#cfc4c0",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-surface": "#303030",
+                        "secondary-fixed": "#ece0dc",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0eded",
+                        "outline-variant": "#d4c3be",
+                        "tertiary-container": "#5b4137",
+                        "on-background": "#1b1c1c",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "on-primary-container": "#d4ada1",
+                        "on-tertiary-fixed-variant": "#5b4137",
+                        "on-primary-fixed-variant": "#5d4037",
+                        "secondary": "#655d5a",
+                        "primary-container": "#5d4037",
+                        "tertiary-fixed": "#ffdbce",
+                        "surface": "#fcf9f8",
+                        "secondary-container": "#ece0dc",
+                        "surface-container-high": "#eae7e7",
+                        "primary-fixed": "#ffdbd0",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#e4beb2",
+                        "outline": "#827470",
+                        "on-secondary-fixed": "#201a18",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#4c4542",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#e7bdb1",
+                        "on-tertiary-container": "#d2aea1",
+                        "primary-fixed-dim": "#e7bdb1",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary-fixed": "#2c160e",
+                        "primary": "#442a22",
+                        "on-tertiary-fixed": "#2b160f",
+                        "background": "#fcf9f8",
+                        "on-secondary-container": "#6b6360",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e5e2e1",
+                        "tertiary": "#432b22",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "element-gap": "32px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        /* Custom ambient shadow for cards to match Modern Organicism aesthetic */
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(93, 64, 55, 0.08);
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: var(--color-outline-variant); /* Fallback */
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        @media (max-width: 767px) {
+            .timeline-line::before {
+                left: 24px; /* Align to left on mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 shadow-sm backdrop-blur-md transition-shadow duration-500 hover:shadow-md">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-display-lg text-headline-md tracking-tighter text-primary" href="#">
+                LUMBER &amp; LINE
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-element-gap">
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors hover:bg-secondary-container/20 px-3 py-2 rounded-DEFAULT" href="#">Home</a>
+<!-- Active State Applied Here -->
+<a class="font-label-md text-label-md tracking-widest uppercase text-primary border-b-2 border-primary pb-1 px-3 py-2" href="#">Process</a>
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors hover:bg-secondary-container/20 px-3 py-2 rounded-DEFAULT" href="#">House</a>
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors hover:bg-secondary-container/20 px-3 py-2 rounded-DEFAULT" href="#">Contact</a>
+</nav>
+<!-- Trailing Action & Mobile Menu Toggle -->
+<div class="flex items-center gap-gutter">
+<button class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md tracking-widest uppercase px-8 py-3 rounded-DEFAULT hover:opacity-90 hover:scale-95 transition-all duration-300">
+                    Inquire
+                </button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 md:pt-48 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap text-center md:text-left">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6 text-balance">
+                The Architecture of Craft
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-balance">
+                Our construction methodology bridges the gap between raw, natural materials and refined architectural elegance. Explore the meticulous four-stage journey from bare earth to a completed, bespoke sanctuary.
+            </p>
+</section>
+<!-- Staggered Timeline Section -->
+<section class="relative max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop timeline-line">
+<div class="flex flex-col gap-section-gap">
+<!-- Stage 1 -->
+<article class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-element-gap items-center group">
+<!-- Timeline Node (Desktop center, Mobile left) -->
+<div class="absolute left-[24px] md:left-1/2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2 -translate-y-1/2 border-4 border-background z-20"></div>
+<!-- Image Card -->
+<div class="w-full pl-12 md:pl-0 md:pr-element-gap">
+<div class="overflow-hidden rounded-lg ambient-shadow bg-surface-container aspect-[4/3] relative">
+<img alt="Site Selection and Foundation Phase" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="A high-end architectural photography shot of a construction site during the foundation phase. The scene is bathed in soft, natural morning light, creating a bright, light-mode aesthetic. Minimalist concrete footings and neat excavations are visible against the earth, demonstrating precision and order. The background features subtle natural surroundings. The color palette emphasizes earthy tones, warm greys, and crisp whites, reflecting a modern organicism philosophy focused on structural integrity and clean preparation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAurs6ntUzlHK7OWKPGigKC9JwZc2P1clLRlTH7aS-Voz2EnVWdGb4UFmQrDPxr1W3dSd768T-0aTGBVWY0ZdYSOaut7yasbpQfgE9twWvdVltHUR1G9YbmrQIyG4_yvos1PIG5W9D-9CCILDnYutJNGbP1AQ_0LLDZgX_xlhRdOWzrwWgK_JW0pU3nfWlowUTuX7oME8xcbOSrE7OB73tSSYvaizuRiQEDFnDKSACrUb6ayG13uc0CtgupJr8DcCzUPpdSgNVrSf4F"/>
+</div>
+</div>
+<!-- Content -->
+<div class="pl-12 md:pl-element-gap flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container text-primary font-label-md text-label-md">01</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">대지 선정 및 기초</h2>
+</div>
+<h3 class="font-body-lg text-body-lg text-outline mb-4">Site Selection &amp; Foundation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-balance">
+                            A meticulous survey of the terrain ensures optimal orientation and structural integrity. Ground preparation involves precise excavation and laying a robust foundation, setting the unshakeable bedrock for the timber structure. We respect the natural topography, allowing the architecture to emerge organically from the site.
+                        </p>
+</div>
+</article>
+<!-- Stage 2 -->
+<article class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-element-gap items-center group">
+<div class="absolute left-[24px] md:left-1/2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2 -translate-y-1/2 border-4 border-background z-20"></div>
+<!-- Content (Reversed on Desktop) -->
+<div class="pl-12 md:pl-0 md:pr-element-gap flex flex-col justify-center md:order-1 order-2">
+<div class="flex items-center gap-3 mb-4">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container text-primary font-label-md text-label-md">02</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-primary">골조 및 목조 시공</h2>
+</div>
+<h3 class="font-body-lg text-body-lg text-outline mb-4">Framing &amp; Wood Construction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-balance">
+                            The soul of the building takes shape. Premium, sustainably sourced timber is expertly jointed and erected. This phase highlights bespoke craftsmanship, where every structural beam and column is meticulously placed to form a resilient and aesthetically breathtaking skeleton, celebrating the raw, tactile nature of wood.
+                        </p>
+</div>
+<!-- Image Card -->
+<div class="w-full pl-12 md:pl-element-gap md:order-2 order-1">
+<div class="overflow-hidden rounded-lg ambient-shadow bg-surface-container aspect-[4/3] relative">
+<img alt="Framing and Wood Construction Phase" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="A striking, detailed photograph of a premium wooden timber frame being erected on a modern construction site. The intricate joinery and massive wooden beams are highlighted by bright, high-key sunlight. The warm tones of the fresh, sustainably sourced cedar and oak contrast beautifully with a clear, pale blue sky. The composition emphasizes the tactile craftsmanship, raw structural beauty, and the seamless blend of traditional woodworking with minimalist, high-end architectural design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJBHN7JM4vVGM3WjD23xwGHVnphJ86crHB90KGGgDkdPOI2-3Loz8TWMzv40uSEU48s_0ZkEhRHW3_A2RJrnEqJXEj9BmjlIYJq1XeIH7LzMETxrNdREuhjTatrcdq8wSc8AqbJd6yTvvjjxb8WEdPG1aiEX5Urm96-ObBJBFdEpQaRxPV2BsZk4CUksqBAud4T9bhnWZEGPdL58oAJHQA0HEV1Yt5ckjbdv5GKrVNvSYFF8VGsfrQ-tnkwfxPbBVMkjW1gHNY2V8C"/>
+</div>
+</div>
+</article>
+<!-- Stage 3 -->
+<article class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-element-gap items-center group">
+<div class="absolute left-[24px] md:left-1/2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-outline-variant transform -translate-x-1/2 -translate-y-1/2 border-4 border-background z-20 transition-colors duration-500 hover:bg-primary"></div>
+<!-- Image Card -->
+<div class="w-full pl-12 md:pl-0 md:pr-element-gap">
+<div class="overflow-hidden rounded-lg ambient-shadow bg-surface-container aspect-[4/3] relative">
+<img alt="Interior and Exterior Finishing Phase" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="An elegant interior shot during the finishing phase of a luxury modern home. High-quality wooden panels, custom millwork, and expansive minimalist glass windows are being installed. The lighting is soft and diffused, creating a serene, light-mode atmosphere. The color palette focuses on warm beige, deep wood browns, and pristine white drywall. The image captures the tactile transition from raw construction to a sophisticated, warm, and inviting architectural sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi0Wz9qj9wQLOzaaLFEFM305jR4jCiIk0pvddwxG8ZoN1sdcjmPoyyy7FmCHdGhoEAaORP97mZ1qWXbwJ7dGWmHfdSdcER-OR0-Lg4vdcWICspeBzKpFgm-nADQ2v0wNg8gz5EiXJtva3acOHuu8XzmJZjvssy93dFNa_ibRv5JeWVPTOyL-MGh6pwd4n-hW2MEfd41PexgW0AgyzoE108e3ZX0JBfH8qiipHsdiaZW57EYqT2uaHyoedof8tUX0uA24UXeJVS5yVO"/>
+</div>
+</div>
+<!-- Content -->
+<div class="pl-12 md:pl-element-gap flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">03</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">내외장 마감</h2>
+</div>
+<h3 class="font-body-lg text-body-lg text-outline mb-4">Interior &amp; Exterior Finishing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-balance">
+                            The transition from structure to sanctuary. High-end finishes, custom millwork, and advanced fenestration are seamlessly integrated. The marriage of tactile wood surfaces with modern glass and minimal metal elements creates a harmonious balance of light, warmth, and structural clarity.
+                        </p>
+</div>
+</article>
+<!-- Stage 4 -->
+<article class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-element-gap items-center group">
+<div class="absolute left-[24px] md:left-1/2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-outline-variant transform -translate-x-1/2 -translate-y-1/2 border-4 border-background z-20 transition-colors duration-500 hover:bg-primary"></div>
+<!-- Content (Reversed on Desktop) -->
+<div class="pl-12 md:pl-0 md:pr-element-gap flex flex-col justify-center md:order-1 order-2">
+<div class="flex items-center gap-3 mb-4">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">04</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">준공 및 완성</h2>
+</div>
+<h3 class="font-body-lg text-body-lg text-outline mb-4">Completion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-balance">
+                            The final culmination of design and engineering. Rigorous quality checks and precision detailing finalize the architectural vision. The completed structure stands as a testament to modern organicism, ready to gracefully age and deepen in character within its natural surroundings.
+                        </p>
+</div>
+<!-- Image Card -->
+<div class="w-full pl-12 md:pl-element-gap md:order-2 order-1">
+<div class="overflow-hidden rounded-lg ambient-shadow bg-surface-container aspect-[4/3] relative">
+<img alt="Final Completion Phase" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking exterior photograph of a completed high-end modern organic home. The architecture features clean, minimalist lines perfectly integrated with rich, tactile timber cladding and large expanses of glass. The structure is bathed in golden hour light, casting soft, ambient shadows that enhance the depth of the wooden textures. The setting is serene and natural, embodying a perfect balance between luxury craftsmanship and environmental harmony within a bright, elegant landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlFQZg2UYSf-4hn2Ps4cGhA_U8Jx8aAinpjpCnE-fPFvGbyrl60MIpBKzExPxKti1ybCLD_ER4UwlDWLawEkFH4txH3eVSsFMoGzrjw9RsARv3C0xr8OfBg9NBSDcuH7epSDgBuGiGayDkzbwLaaOlCLDxFxr2cwNeVs-CQAE_o6fA2mcf8EMpemcZDeBxe0tEZk4MVg_57oRH-49wgwOeiYpngJWiONXZNjtAa4KP54MyYaskHr0aKAASXGIoeAXYgR4dW9Xf8MQN"/>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Call to Action Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-section-gap text-center">
+<div class="bg-secondary-container/30 rounded-xl p-12 md:p-24 border border-outline-variant/30 ambient-shadow backdrop-blur-sm">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6 text-balance">
+                    Begin Your Architectural Journey
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8 text-balance">
+                    Partner with us to translate your vision into a structural masterpiece crafted from nature's finest materials.
+                </p>
+<button class="bg-primary text-on-primary font-label-md text-label-md tracking-widest uppercase px-10 py-4 rounded-DEFAULT hover:opacity-90 hover:-translate-y-1 transition-all duration-300 ambient-shadow">
+                    Start a Conversation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full mt-section-gap bg-surface-container border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-element-gap px-margin-mobile md:px-margin-desktop py-margin-desktop max-w-container-max mx-auto transition-all duration-200 ease-in-out">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-headline-sm text-primary">
+                    LUMBER &amp; LINE
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Pioneering modern organicism through bespoke timber architecture and meticulous craftsmanship.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-3 md:items-center">
+<nav class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-primary/30 underline-offset-4" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-primary/30 underline-offset-4" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-primary/30 underline-offset-4" href="#">Pinterest</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-primary/30 underline-offset-4 mt-4 text-sm" href="#">Privacy Policy</a>
+</nav>
+</div>
+<!-- Copyright -->
+<div class="flex flex-col justify-end md:items-end">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm md:text-right text-balance">
+                    © 2024 Lumber &amp; Line Architectural Studio.<br class="hidden md:block"/> All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
