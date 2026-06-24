@@ -17,6 +17,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "M LINE | 나무로 짓는 꿈, 시간이 머무는 집",
   description: "나무로 짓는 꿈, 시간이 머무는 집. M LINE",
+  verification: {
+    google: "iUEU3e3jBgJj3boOmKw6GdvD7nNK16uOVnwk785ke40",
+  },
 };
 
 export default function RootLayout({
