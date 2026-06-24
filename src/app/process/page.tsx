@@ -119,6 +119,19 @@ export default function Process() {
         </div>
       </section>
 
+      {/* Blog Link Section */}
+      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-section-gap text-center md:text-left">
+        <a
+          href="https://blog.naver.com/wklover777"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors duration-200 group"
+        >
+          집 짓는 과정을 블로그에 더 자세히 기록하고 있습니다
+          <span className="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1" style={{ fontSize: '20px' }}>arrow_forward</span>
+        </a>
+      </section>
+
       {/* Call to Action Section */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-section-gap text-center">
         <div className="bg-secondary-container/30 rounded-xl p-12 md:p-24 border border-outline-variant/30 ambient-shadow backdrop-blur-sm flex flex-col items-center">

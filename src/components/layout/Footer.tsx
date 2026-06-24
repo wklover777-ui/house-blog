@@ -13,6 +13,15 @@ export default function Footer() {
           <p className="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
             직접 짓고, 정직하게 짓습니다.<br/>목조 주택 시공 · M실내건축
           </p>
+          <a
+            href="https://blog.naver.com/wklover777"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors duration-200"
+          >
+            <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+            블로그에서 시공 과정 보기
+          </a>
         </div>
 
         {/* Copyright */}
