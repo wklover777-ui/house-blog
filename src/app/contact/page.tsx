@@ -147,6 +147,17 @@ export default function Contact() {
                   wklover777@gmail.com
                 </a>
               </div>
+              <div className="flex items-center gap-4">
+                <span className="material-symbols-outlined text-primary">article</span>
+                <a
+                  href="https://blog.naver.com/wklover777"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  블로그에서 더 보기
+                </a>
+              </div>
             </div>
             {/* Google Maps Embed */}
             <div className="w-full h-[300px] rounded-lg overflow-hidden shadow-sm border border-outline-variant/30">
