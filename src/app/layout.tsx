@@ -20,6 +20,28 @@ export const metadata: Metadata = {
   verification: {
     google: "iUEU3e3jBgJj3boOmKw6GdvD7nNK16uOVnwk785ke40",
   },
+  openGraph: {
+    title: "M LINE | 나무로 짓는 꿈, 시간이 머무는 집",
+    description: "나무로 짓는 꿈, 시간이 머무는 집. M LINE",
+    url: "https://house-blog.vercel.app",
+    siteName: "M LINE",
+    images: [
+      {
+        url: "https://house-blog.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "M LINE 목조주택",
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "M LINE | 나무로 짓는 꿈, 시간이 머무는 집",
+    description: "나무로 짓는 꿈, 시간이 머무는 집. M LINE",
+    images: ["https://house-blog.vercel.app/og-image.png"],
+  },
 };
 
 export default function RootLayout({
